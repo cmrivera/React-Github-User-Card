@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import axios from "axios";
 import Card from "./components/userCard";
+import UserSearch from "./components/searchForm";
 
 //import UserCard from "./components/userCard";
 
@@ -48,6 +49,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Chris's React Github UserCard App</h1>
+        <UserSearch />
         <Card
           userImg={this.state.users.avatar_url}
           name={this.state.users.name}
